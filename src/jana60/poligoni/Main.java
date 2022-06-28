@@ -2,7 +2,7 @@ package jana60.poligoni;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		Poligono quadrato = new Quadrato(10);
 		quadrato.calcolaPerimetro();

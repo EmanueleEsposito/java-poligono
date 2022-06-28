@@ -6,8 +6,11 @@ public class Rettangolo implements Poligono {
 	private int altezza;
 
 	// Costruttore
-	public Rettangolo(int base, int altezza) {
+	public Rettangolo(int base, int altezza) throws Exception {
 		super();
+		if (base <= 0 || altezza <= 0) {
+			System.out.println("Errore il valore non può essere uguale o minore di zero");
+		}
 		this.base = base;
 		this.altezza = altezza;
 	}
